@@ -7,7 +7,6 @@
 
   <ItemGroup>
     <Content Include="Controllers\HomeController.cs" />
-    <Content Include="Controllers\NewGameController.cs" />
     <Content Include="Controllers\ShowGameController.cs" />
   </ItemGroup>
   <ItemGroup>

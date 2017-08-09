@@ -30,9 +30,15 @@ namespace Dice.Controllers
                 if(Convert.ToInt32(Id)<100)
                     numId++;
             }
-            else
-                if(Convert.ToInt32(Id)>1)
+            else if(!string.IsNullOrEmpty(Request.Form["Previous"]))
+            {
+                if (Convert.ToInt32(Id) > 1)
                     numId--;
+            }
+            else if(!string.IsNullOrEmpty(Request.Form["Restart"]))
+            {
+                numId = 1;
+            }
 
             ViewData["id"] = numId;
             return View("ShowRolls", scores);
