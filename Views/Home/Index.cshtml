@@ -2,17 +2,11 @@
     ViewData["Title"] = "Home Page";
 }
 <div class="row">
+    <div class="w-100"></div> 
     <div class="col">
-        <h2>Team Name</h2>
+        <h2>Dice Rolling</h2>
     </div>
-    <div class="w-100"></div>
-    <div class="col">
-        <input type="text" id="teamName" name="teamName" value='@ViewData["TeamName"]' />        
-    </div>        
     <div class="col">        
-        @Html.ActionLink("New Game", "ShowRolls","ShowGame");
-    </div>
-    <div class="col">
-        <input type="button" id="replayGame" name="replayGame" value="Replay Game"/>
-    </div>
+        @Html.ActionLink("Click here to start", "ShowRolls","ShowGame")
+    </div>   
 </div>
