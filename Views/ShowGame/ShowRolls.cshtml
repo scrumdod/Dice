@@ -11,34 +11,38 @@
         @Html.HiddenFor(modelitem => modelitem[i].Dice3Score)
 
     }
-    <h1>Day @ViewData["id"] </h1>
+    <div class="row">
+        <div class="col-xs-12">
+            <h1 class="center-block">Day @ViewData["id"] </h1>
+        </div>
+    </div>
 
     <input type="hidden" value=@ViewData["id"] name="id" id="id" />
 
     <div class="row">
         <div class="col-xs-12">
-            <img src=@(String.Format("{0}{1}{2}","/images/die_", Model[(int)ViewData["id"]].Dice1Score,".gif")) />
+            <img class="img-responsive center-block" src=@(String.Format("{0}{1}{2}","/images/die_", Model[(int)ViewData["id"]].Dice1Score,".gif")) />
         </div> 
         <div class="col-xs-12">
-            <img src=@(String.Format("{0}{1}{2}","/images/die_", Model[(int)ViewData["id"]].Dice2Score,".gif")) />
+            <img class="img-responsive center-block" src=@(String.Format("{0}{1}{2}","/images/die_", Model[(int)ViewData["id"]].Dice2Score,".gif")) />
         </div> 
         <div class="col-xs-12">
-            <img src=@(String.Format("{0}{1}{2}","/images/die_", Model[(int)ViewData["id"]].Dice3Score,".gif")) />
+            <img class="img-responsive center-block" src=@(String.Format("{0}{1}{2}","/images/die_", Model[(int)ViewData["id"]].Dice3Score,".gif")) />
         </div>
     </div>
     <div class="row">
         <div class="col-xs-12">
-            <input class="btn" type="submit" value="Next" name="Next" id="Next" />                
+            <input class="center-block btn-block" type="submit" value="Next" name="Next" id="Next" />                
         </div>
     </div>
     <div class="row">
         <div class="col-xs-12">
-            <input class="btn" type="submit" value="Previous" name="Previous" id="Previous" />
+            <input class="center-block btn-block" type="submit" value="Previous" name="Previous" id="Previous" />
         </div>
     </div>
     <div class="row">
         <div class="col-xs-12">
-            <input class="btn" type="submit" value="Restart" name="Restart" id="Restart" />
+            <input class="center-block btn-block" type="submit" value="Restart" name="Restart" id="Restart" />
         </div>
     </div>
 </form>
