@@ -22,13 +22,13 @@
 
     <div class="row">
         <div class="col-xs-12">
-            <img class="img-responsive center-block" src=@(String.Format("{0}{1}{2}","/images/die_", Model[(int)ViewData["id"]].Dice1Score,".gif")) />
+            <img class="img-responsive center-block" src=@(String.Format("{0}{1}{2}","/images/die_", Model[(int)ViewData["id"]-1].Dice1Score,".gif")) />
         </div> 
         <div class="col-xs-12">
-            <img class="img-responsive center-block" src=@(String.Format("{0}{1}{2}","/images/die_", Model[(int)ViewData["id"]].Dice2Score,".gif")) />
+            <img class="img-responsive center-block" src=@(String.Format("{0}{1}{2}","/images/die_", Model[(int)ViewData["id"]-1].Dice2Score,".gif")) />
         </div> 
         <div class="col-xs-12">
-            <img class="img-responsive center-block" src=@(String.Format("{0}{1}{2}","/images/die_", Model[(int)ViewData["id"]].Dice3Score,".gif")) />
+            <img class="img-responsive center-block" src=@(String.Format("{0}{1}{2}","/images/die_", Model[(int)ViewData["id"]-1].Dice3Score,".gif")) />
         </div>
     </div>
     <div class="row">

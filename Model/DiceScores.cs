@@ -15,7 +15,7 @@ namespace Dice.Model
             List<TurnScore> scores = new List<TurnScore>();
             DiceScore score = new DiceScore();
             Random random = new Random();
-            for(int i = 0; i < 100; i++)
+            for(int i = 0; i < 10; i++)
             {
                 TurnScore turn = new TurnScore();
                 turn.Dice1Score = score.Roll(random);

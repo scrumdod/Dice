@@ -27,7 +27,7 @@ namespace Dice.Controllers
             int numId = Convert.ToInt32(Id);
             if (!string.IsNullOrEmpty(Request.Form["Next"]))
             {
-                if(Convert.ToInt32(Id)<100)
+                if(Convert.ToInt32(Id)<10)
                     numId++;
             }
             else if(!string.IsNullOrEmpty(Request.Form["Previous"]))
